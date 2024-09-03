@@ -5,7 +5,7 @@ import Star from "./Star"
 
 const Coaching = () => {
   return (
-    <section className='lg:px-24'>
+    <section className='lg:px-24 px-4'>
       <div className='grid lg:grid-cols-2 py-24 gap-16'>
         <div className='lg:order-2'>
           <img src={fourthImg} alt="img-4" className='rounded-lg'/>
@@ -20,11 +20,11 @@ const Coaching = () => {
           <p className='text-gray-500 leading-relaxed text-lg'>
             Sometimes your students want one-on-one attention. Podia makes it easy for you to charge for coaching sessions and consultations.
           </p>
-          <button className='flex items-center gap-2 text-[#4b2aad] ffont-medium text-lg py-4'>
-          Learn more about coaching
-          <span className=''>
-              <FaArrowRight  />
-          </span>
+          <button className='flex items-center gap-2 text-[#4b2aad] font-semibold text-lg py-4 group hover:text-[#402a80]'>
+              Learn more about coaching
+            <span className='transform transition-transform duration-300 ease-in-out group-hover:translate-x-2'>
+              <FaArrowRight />
+            </span>
           </button>
         </div>
       </div>

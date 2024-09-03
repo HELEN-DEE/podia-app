@@ -20,12 +20,12 @@ const DigitalDownloads = () => {
         <p className='text-gray-500 leading-relaxed text-lg'>
           Have an ebook to sell? Templates you love? Podia makes it easy to spin up a sales page and sell ebooks, templates, audio files, video files, spreadsheets, and any other file type.
         </p>
-        <button className='flex items-center gap-2 text-[#4b2aad] font-medium text-lg py-4'>
-          Learn more about downloads 
-          <span className=''>
-              <FaArrowRight  />
-          </span>
-        </button>
+        <button className='flex items-center gap-2 text-[#4b2aad] font-semibold text-lg py-4 group hover:text-[#402a80]'>
+              Learn more about downloads
+            <span className='transform transition-transform duration-300 ease-in-out group-hover:translate-x-2'>
+              <FaArrowRight />
+            </span>
+          </button>
       </div>
 
   

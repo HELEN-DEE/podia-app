@@ -13,3 +13,12 @@ body {
 .san-serif {
   font-family: 'Georgia', sans-serif;
 }
+
+/* adds scrollbar for all web browsers */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

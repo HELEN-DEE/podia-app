@@ -19,11 +19,11 @@ const Webinars = () => {
           <p className='text-gray-500 leading-relaxed text-lg'>
             How can you charge for your webinars and workshops? Do it from your Podia site. Set up a paid webinar product and your customers can register straight from your website.
           </p>
-          <button className='flex items-center gap-2 text-[#4b2aad] ffont-medium text-lg py-4'>
-            Learn more about webinars 
-          <span className=''>
-              <FaArrowRight  />
-          </span>
+          <button className='flex items-center gap-2 text-[#4b2aad] font-semibold text-lg py-4 group hover:text-[#402a80]'>
+              Learn more about webinars
+            <span className='transform transition-transform duration-300 ease-in-out group-hover:translate-x-2'>
+              <FaArrowRight />
+            </span>
           </button>
         </div>
       </div>

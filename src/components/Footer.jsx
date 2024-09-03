@@ -76,22 +76,37 @@ const FooterLinks = [
   },
 ];
 
+const copyrightLinks = [
+  {Link: "Terms", path: "/Terms"},
+  {Link: "Privacy", path:"Privacy"}
+]
+
 const Footer = () => {
   return (
-    <footer className='lg:px-24 bg-[#f5efeb] py-12 '>
+    <footer className='lg:px-24 bg-[#f5efeb] py-28 '>
       <div className=''>
         {FooterLinks.map((item, index) => (
           <div key={index} className='flex items-center gap-8 mb-4'>
             <h1 className='font-bold text-lg'>{item.Label}</h1>
             <ul className='flex items-center gap-4'>
               {item.nestedLinks.map((nestedItem, nestedIndex) => (
-                <li key={nestedIndex} className='underline hover:!text-[#4b2aad]'>
-                  <a href={nestedItem.path} className='text-gray-500' >
+                <li key={nestedIndex} className='underline text-lg'>
+                  <a href={nestedItem.path} className='text-gray-600 hover:text-[#4b2aad]' >
                     {nestedItem.Link}
                   </a>
                 </li>
               ))}
             </ul>
+          </div>
+        ))}
+      </div>
+      <div className='flex gap-3 text-gray-600 text-sm pt-8'>
+        <p>Podia Labs, Inc. © 2024</p>
+        {copyrightLinks.map((item, index) => (
+          <div key={index} className=''>
+            <a href={item.path} className='underline hover:text-[#4b2aad]'>
+              {item.Link}
+            </a>
           </div>
         ))}
       </div>

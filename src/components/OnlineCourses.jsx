@@ -28,10 +28,10 @@ const OnlineCourses = () => {
           <p className='text-gray-500 leading-relaxed text-xl'>
             Make a beautiful online course for your customers. Podia hosts your course. That means all the lessons, files, and videos you want handled for you.
           </p>
-          <button className='flex items-center gap-2 text-[#4b2aad] font-medium text-lg py-4'>
-            Learn more about courses
-            <span className=''>
-              <FaArrowRight  />
+          <button className='flex items-center gap-2 text-[#4b2aad] font-semibold text-lg py-4 group hover:text-[#402a80]'>
+              Learn more about courses
+            <span className='transform transition-transform duration-300 ease-in-out group-hover:translate-x-2'>
+              <FaArrowRight />
             </span>
           </button>
         </div>

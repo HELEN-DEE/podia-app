@@ -3,7 +3,7 @@ import firstImg from "../assets/podia-img-1.jpeg"
 
 const DigitalProducts = () => {
   return (
-    <section className='lg:px-24 pt-48 pb-5'>
+    <section className='lg:px-24 lg:pt-48 pb-5 pt-36 px-4'>
       
       <div className='grid lg:grid-cols-2 gap-14'>
         <div className='lg:order-2 flex items-center'>
@@ -19,7 +19,7 @@ const DigitalProducts = () => {
           <p className='text-[1.3rem] leading-9 text-gray-500'>
           Get everything you need in one place that you own. Podia takes care of hosting products, taking payments, and getting products to your customers. And you always control your own work.
           </p>
-          <button className='bg-[#4b2aad] px-6 py-3.5 rounded-full w-[70%] text-white text-xl font-bold'>
+          <button className='bg-[#4b2aad] px-6 py-3.5 rounded-full w-[70%] text-white text-xl font-bold hover:bg-[#402a80] transition ease-in-out duration-200'>
             Get your free account
           </button>
         </div>
