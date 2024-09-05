@@ -14,7 +14,7 @@ const Coaching = () => {
           <h1 className='uppercase text-gray-500 text-sm'>
             Coaching
           </h1>
-          <h2 className='font-[serif-font] text-[2rem] font-semibold leading-snug'>
+          <h2 className='font-[serif-font] lg:text-[2rem] text-2xl font-semibold leading-snug'>
             One-on-one coaching and consultations, with billing managed for you
           </h2>
           <p className='text-gray-500 leading-relaxed text-lg'>
@@ -22,20 +22,21 @@ const Coaching = () => {
           </p>
           <button className='flex items-center gap-2 text-[#4b2aad] font-semibold text-lg py-4 group hover:text-[#402a80]'>
               Learn more about coaching
-            <span className='transform transition-transform duration-300 ease-in-out group-hover:translate-x-2'>
+            <span className='transform transition-transform duration-300 ease-in-out group-hover:translate-x'>
               <FaArrowRight />
             </span>
           </button>
+          
         </div>
       </div>
 
       <Star/>
 
-      <div className='px-10 space-y-3 pb-8 '>
-        <h1 className='text-center font-[serif-font] text-2xl px-6 leading-relaxed'>
+      <div className='lg:px-10 space-y-3 pb-8 '>
+        <h1 className='text-center font-[serif-font] lg:text-2xl text-xl lg:px-6 leading-relaxed'>
           Podia just works. It’s easy to use and includes everything you need to sell digital products. I’ve tried all the alternatives, and Podia is hard to beat.
         </h1>
-        <p className='text-center text-lg text-gray-500'>
+        <p className='text-center lg:text-lg text-gray-500'>
           — Shawn Leamon, Divorce and Your Money
         </p>
       </div>

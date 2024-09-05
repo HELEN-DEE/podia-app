@@ -134,6 +134,10 @@ const Header = () => {
   // Function to Toggle the value when the menu is clicked
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    if(isMenuOpen) {
+      setActiveDropdown(null);
+      setHoverActive(null);
+    }
   };
 
   return (
@@ -237,19 +241,25 @@ const Header = () => {
           {/* Conditionally render navlinks when menu is open */}
           {isMenuOpen && (
           <nav className="lg:hidden absolute bg-[#ffffff] left-0 right-0 w-[97%] mx-auto top-2 z-10 px-4 shadow-lg border rounded-lg overflow-y-auto max-h-[95vh] scrollbar-hide">
-            <p className="text-[12px] uppercase px-3 flex justify-between pt-8 text-gray-500">Menu
-
+            <p className="text-[12px] uppercase px-3 flex justify-between pt-8 text-[#c08d6e]">
+              Menu
               {/* close menu button */}
-              <span onClick={() => setIsMenuOpen(false)}>
-                <IoIosClose size={30} className="text-[#4b2aad]"/>
-              </span>
+              <span 
+        onClick={() => {
+          setIsMenuOpen(false);
+          setActiveDropdown(null); // Reset activeDropdown when the menu is closed
+          setHoverActive(null); // Reset hoverActive
+        }}
+      >
+        <IoIosClose size={30} className="text-[#4b2aad]"/>
+      </span>
             </p>
             {navLinks.map((item, index) => (
               <div key={index} className="py-1">
         <ul className="">
           {/* Navigation item */}
           <li
-  className={`text-xl relative cursor-pointer items-center py-2 transition-transform duration-200 ease-in-out px-3 text-[#000000] font-medium flex font-[san-serif]`}
+  className={`text-2xl relative cursor-pointer items-center py-2 transition-transform duration-200 ease-in-out px-3 text-[#000000] font-medium flex font-[san-serif]`}
   onClick={() => handleDropdown(index)}
   onMouseEnter={() => setHoverActive(index)}
   onMouseLeave={() => setHoverActive(null)}

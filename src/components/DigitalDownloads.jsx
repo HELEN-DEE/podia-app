@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const DigitalDownloads = () => {
   return (
-    <section className='lg:px-24 '>
+    <section className='lg:px-24 px-4'>
       <div className=' grid lg:grid-cols-2 py-24 gap-16'>
       <div className='lg:order-2'>
         <img src={thirdImg} alt="img-3" className='rounded-lg'/>
@@ -14,7 +14,7 @@ const DigitalDownloads = () => {
         <h1 className='uppercase text-gray-500 text-sm'>
         Digital downloads
         </h1>
-        <h2 className='font-[serif-font] text-4xl font-semibold leading-snug'>
+        <h2 className='font-[serif-font] lg:text-4xl text-2xl font-semibold leading-snug'>
           Ebooks, templates, and any file type you can think of
         </h2>
         <p className='text-gray-500 leading-relaxed text-lg'>
@@ -32,11 +32,11 @@ const DigitalDownloads = () => {
     </div>
       <Star/>
 
-      <div className='px-10 space-y-3 pb-8 '>
-        <h1 className='text-center font-[serif-font] text-2xl px-6 leading-relaxed'>
+      <div className='lg:px-10 space-y-3 pb-8 '>
+        <h1 className='text-center font-[serif-font] lg:text-2xl text-xl lg:px-6  leading-relaxed'>
           We didn’t have to stress about technical details or custom coding. Using Podia made selling our first eBook quick, efficient, and fun.
         </h1>
-        <p className='text-center text-lg text-gray-500'>
+        <p className='text-center lg:text-lg text-base text-gray-500'>
           — Matt & Steph, Plant-based food bloggers
         </p>
       </div>

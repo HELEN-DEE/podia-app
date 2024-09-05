@@ -6,11 +6,11 @@ import Star from "./Star"
 
 const OnlineCourses = () => {
   return (
-    <section className='lg:px-24 lg:py-6'>
-      <h1 className='text-center text-4xl font-[serif-font] font-semibold'>
+    <section className='lg:px-24 lg:py-6 px-4'>
+      <h1 className='text-center lg:text-4xl text-2xl font-[serif-font] font-semibold'>
         What kinds of products can you sell with Podia?
       </h1>
-      <p className='text-center text-xl py-3 leading-relaxed text-gray-500'>
+      <p className='text-center lg:text-xl text-lg py-3 leading-relaxed text-gray-500'>
         Podia gives you the flexibility to sell whatever you want. That means you have more ways to grow your creator business.
       </p>
 
@@ -22,7 +22,7 @@ const OnlineCourses = () => {
           <h1 className='uppercase text-gray-500 text-sm'>
             Online courses
           </h1>
-          <h2 className='font-[serif-font] text-4xl font-semibold leading-snug'>
+          <h2 className='font-[serif-font] lg:text-4xl text-2xl font-semibold leading-snug'>
             Beautiful online courses you can build in moments
           </h2>
           <p className='text-gray-500 leading-relaxed text-xl'>
@@ -39,11 +39,11 @@ const OnlineCourses = () => {
 
       <Star/>
 
-      <div className=' px-10 space-y-3 pb-8'>
-      <h1 className='text-center font-[serif-font] text-2xl px-6 leading-relaxed'>
+      <div className=' lg:px-10 space-y-3 pb-8'>
+      <h1 className='text-center font-[serif-font] lg:text-2xl text-xl lg:px-6 leading-relaxed'>
           I’ve wanted to offer e-courses for a while but always felt overwhelmed with how to set it up. Podia has made it super easy.
         </h1>
-        <p className='text-center text-lg text-gray-500'>
+        <p className='text-center lg:text-lg text-gray-500'>
           — Joy Cho, Oh Joy! Academy
         </p>
       </div>

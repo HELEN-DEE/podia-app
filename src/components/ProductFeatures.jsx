@@ -23,12 +23,12 @@ const Features = [
 ]
 const ProductFeatures = () => {
   return (
-    <section className='lg:px-20 py-24'>
+    <section className='lg:px-20 py-24 px-4'>
       <div className='px-8'>
-        <h1 className='text-[2.9rem] text-center font-semibold font-[serif-font] py-4 leading-tight'>
+        <h1 className='lg:text-[2.9rem] text-2xl text-center font-semibold font-[serif-font] py-4 leading-tight'>
           All you have to do is make the product. Podia takes care of the details for you.
         </h1>
-        <p className='text-xl text-center leading-relaxed text-gray-500'>
+        <p className='lg:text-xl text-lg text-center leading-relaxed text-gray-500'>
           Podia lets you make your sales page, take payments, and give your customers access all in one place. Host and sell your products without needing to figure out a handful of new tools.
         </p>
       </div>

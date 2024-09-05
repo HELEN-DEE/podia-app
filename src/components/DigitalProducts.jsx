@@ -13,13 +13,13 @@ const DigitalProducts = () => {
           <h1 className='uppercase text-sm text-gray-500'>
             Digital products
           </h1>
-          <h2 className='text-5xl font-semibold leading-tight font-[serif-font]'>
+          <h2 className='lg:text-5xl text-3xl font-semibold leading-tight font-[serif-font]'>
           Sell online courses, coaching sessions, webinars, workshops, ebooks, and anything you can think of on Podia
           </h2>
           <p className='text-[1.3rem] leading-9 text-gray-500'>
           Get everything you need in one place that you own. Podia takes care of hosting products, taking payments, and getting products to your customers. And you always control your own work.
           </p>
-          <button className='bg-[#4b2aad] px-6 py-3.5 rounded-full w-[70%] text-white text-xl font-bold hover:bg-[#402a80] transition ease-in-out duration-200'>
+          <button className='bg-[#4b2aad] px-6 py-3.5 rounded-full w-[70%] text-white lg:text-xl text-lg font-bold hover:bg-[#402a80] transition ease-in-out duration-200'>
             Get your free account
           </button>
         </div>

@@ -11,7 +11,7 @@ const star = [
 
 const Star = () => {
   return (
-    <div className='flex justify-center gap-3 py-3'>
+    <div className='flex justify-center gap-4 py-3'>
     {star.map((item, index) => (
       <ul key={index}>
         <span className='text-yellow-500 text-2xl'>

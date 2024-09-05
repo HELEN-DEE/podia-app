@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Webinars = () => {
   return (
-    <section className='lg:px-24'>
+    <section className='lg:px-24 px-4'>
       <div className='grid lg:grid-cols-2 py-24 gap-16'>
         <div className='lg:order-2 pb-4'>
           <img src={fifthImg} alt="img-5" className='rounded-lg'/>
@@ -13,7 +13,7 @@ const Webinars = () => {
           <h1 className='uppercase text-gray-500 text-sm'>
             Webinars
           </h1>
-          <h2 className='font-[serif-font] text-4xl font-semibold leading-snug'>
+          <h2 className='font-[serif-font] lg:text-4xl text-2xl font-semibold leading-snug'>
             Webinars and workshops with registration and payment in one place
           </h2>
           <p className='text-gray-500 leading-relaxed text-lg'>

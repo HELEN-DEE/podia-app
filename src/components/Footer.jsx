@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { RiArrowDownSLine } from "react-icons/ri";
 
 const FooterLinks = [
   {
@@ -82,13 +83,29 @@ const copyrightLinks = [
 ]
 
 const Footer = () => {
+  // to track if dropdown is open
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  const toggleDropdown = (index) => {
+    setOpenDropdown(openDropdown === index ? null : index);
+  }
   return (
-    <footer className='lg:px-24 bg-[#f5efeb] py-28 '>
+    <footer className='lg:px-24 bg-[#f5efeb] lg:py-28 py-16 px-4'>
       <div className=''>
         {FooterLinks.map((item, index) => (
-          <div key={index} className='flex items-center gap-8 mb-4'>
-            <h1 className='font-bold text-lg'>{item.Label}</h1>
-            <ul className='flex items-center gap-4'>
+          <div key={index} className='lg:flex lg:items-center lg:gap-8 mb-4' >
+            <div className='flex lg:items-center justify-between  cursor-pointer' onClick={() => toggleDropdown(index)}>
+            <h1 className='font-bold text-lg'>
+              {item.Label}
+            </h1>
+            <RiArrowDownSLine className = {`transform transition-transform duration-300 lg:hidden ${
+              openDropdown === index ? 'rotate-180' : ''
+              }`}/>
+            </div>
+          <ul className = {`mt-2 ${
+            openDropdown ===index ? 'block' : 'hidden'
+          } lg:flex lg:items-center lg:gap-4`
+          }>
               {item.nestedLinks.map((nestedItem, nestedIndex) => (
                 <li key={nestedIndex} className='underline text-lg'>
                   <a href={nestedItem.path} className='text-gray-600 hover:text-[#4b2aad]' >
