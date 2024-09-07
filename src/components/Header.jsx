@@ -142,7 +142,7 @@ const Header = () => {
 
   return (
     <header
-      className={`lg:px-24 py-4 px-4 flex items-center justify-between  bg-[#fdfbf9] fixed w-full transition-shadow duration-300 ${
+      className={`lg:px-24 py-4 px-4 flex items-center justify-between  bg-[#fdfbf9] fixed w-full transition-shadow duration-300 z-50 ${
         isScrolled ? "shadow-lg bg-[#ffffff]" : ""
       }`}
     >
